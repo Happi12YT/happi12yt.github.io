@@ -280,7 +280,7 @@
 
     <!-- FOOTER -->
     <footer class="z-10 w-full text-center py-6 text-xs text-zinc-500 font-mono">
-        <p>© 2026 Happi12</p>
+        <p>© 2021–<span id="current-year"></span> Happi12</p>
     </footer>
 
     <!-- TOAST NOTIFICATION -->
@@ -428,6 +428,8 @@
 
         // Start animation loop
         animateParticles();
+
+        document.getElementById("current-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
